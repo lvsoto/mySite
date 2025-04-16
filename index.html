@@ -68,52 +68,61 @@
 
             <div #swiperRef="" class="swiper card-swiper">
                 <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="" target="_blank" class="experience-box">
-                        <picture>
-                            <source srcset="images/webp/usbank.webp" type="image/webp">
-                            <img src="images/usbank.png" alt="US Bank Logo">
-                        </picture>
-                        <h4>US Bank</h4>
-                        <h5><em>Program Coordinator</em></h5>
-                        <p>Successfully led 15 regulatory remediation projects to on-time, on-budget completion by implementing quality controls, project management tools, and 
-                            proactive collaboration, improving efficiency by 20%, reporting turnaround by 30%, and reducing compliance risks by 75%.</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" target="_blank" class="experience-box">
-                        <picture>
-                            <source srcset="images/webp/fdm.webp" type="image/webp">
-                            <img src="images/fdm.png" alt="FDM Logo">
-                        </picture>
-                        <h4>FDM Group</h4>
-                        <h5><em>IT Consultant</em></h5>
-                        <p>Completed intensive Java and web application training before consulting at an investment bank, where I developed and optimized internal systems, led security 
-                            risk assessments for 40+ applications with a 95% resolution rate, and successfully managed four projects to on-time, on-budget completion.</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" target="_blank" class="experience-box">
-                        <picture>
-                            <source srcset="images/webp/smith.webp" type="image/webp">
-                            <img src="images/smith.png" alt="Smith Logo">
-                        </picture>
-                        <h4>Smith College</h4>
-                        <h5><em>Media Consultant</em></h5>
-                        <p>Led hands-on training for 2,000+ students and faculty on media production equipment, while using Adobe Creative Suite to enhance video quality and create engaging promotional content for school events.</p>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" target="_blank" class="experience-box">
-                        <picture>
-                            <source srcset="images/webp/smith.webp" type="image/webp">
-                            <img src="images/smith.png" alt="Smith Logo">
-                        </picture>
-                        <h4>Smith College Campus School</h4>
-                        <h5><em>Technology Teaching Assistant</em></h5>
-                        <p>Designed and delivered interactive computer lessons for 30+ elementary students, incorporating Scratch, Research, Typing, and iMovie projects to enhance engagement and technology skills.</p>
-                    </a>
-                </div>
+                    <div class="swiper-slide">
+                        <a href="" target="_blank" class="experience-box">
+                            <picture>
+                                <source srcset="images/webp/usbank.webp" type="image/webp">
+                                <img src="images/usbank.png" alt="US Bank Logo" class="logoimg">
+                            </picture>
+                            <h4>US Bank</h4>
+                            <h5><em>Program Coordinator</em></h5>
+                            <p>Boosted efficiency by 20% and reduced risks by 75% through project consolidation, compliance improvements, and advanced tracking tools.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" target="_blank" class="experience-box">
+                            <picture>
+                                <source srcset="images/webp/mufg.webp" type="image/webp">
+                                <img src="images/mufg.png" alt="MUFG Logo" class="logoimg">
+                            </picture>
+                            <h4>MUFG</h4>
+                            <h5><em>Program Coordinator</em></h5>
+                            <p>Led 15 regulatory remediation projects to on-time, on-budget completion, boosting efficiency by 20%, reporting speed by 30%, and cutting compliance risks by 75%.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" target="_blank" class="experience-box">
+                            <picture>
+                                <source srcset="images/webp/fdm.webp" type="image/webp">
+                                <img src="images/fdm.png" alt="FDM Logo" class="logoimg">
+                            </picture>
+                            <h4>FDM Group</h4>
+                            <h5><em>IT Consultant</em></h5>
+                            <p>Trained in Java and web apps before consulting at a bank, improving systems, resolving 95% of risks in 40+ apps, and managing four successful projects.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" target="_blank" class="experience-box">
+                            <picture>
+                                <source srcset="images/webp/smith.webp" type="image/webp">
+                                <img src="images/smith.png" alt="Smith Logo" class="logoimg">
+                            </picture>
+                            <h4>Smith College</h4>
+                            <h5><em>Media Consultant</em></h5>
+                            <p>Trained 2,000+ students and faculty on media gear and used Adobe Creative Suite to create high-quality promotional videos.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" target="_blank" class="experience-box">
+                            <picture>
+                                <source srcset="images/webp/smith.webp" type="image/webp">
+                                <img src="images/smith.png" alt="Smith Logo" class="logoimg">
+                            </picture>
+                            <h4>Smith College Campus School</h4>
+                            <h5><em>Technology Teaching Assistant</em></h5>
+                            <p>Taught 30+ elementary students using Scratch, Typing, and iMovie projects to build tech skills and boost engagement.</p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -150,7 +159,27 @@
     <div class="divider"></div>
     <section id="leave-message-section">
         <h2>Leave a Message!</h2>
-        <p>coming soon :)</p>
+
+        <form class="margin-top flex flex-col space w-full">
+            <label class="space">
+                <span class="field-label">Full Name</span>
+                <input type="text" name="name" required="" class="field-input w-full" placeholder="ex., John Doe" value="">
+            </label>
+            <label class="space">
+                <span class="field-label">Email address</span>
+                <input type="email" name="email" required="" class="field-input w-full" placeholder="ex., johndoe@gmail.com" value="">
+            </label>
+            <label class="space">
+                <span class="field-label">Your message</span>
+                <textarea name="message" required="" class="field-input w-full h-20 md:h-32 resize-none" placeholder="Share your thoughts or inquiries...">
+            
+                </textarea>
+            </label>
+            <button class="field-btn" type="submit">Send Message
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+
     </section>
 
     <!-- Swiper JS -->
