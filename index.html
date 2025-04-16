@@ -68,13 +68,25 @@
 
             <div #swiperRef="" class="swiper card-swiper">
                 <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="" target="_blank" class="experience-box">
+                            <picture>
+                                <source srcset="images/webp/usbank.webp" type="image/webp">
+                                <img src="images/usbank.png" alt="US Bank Logo">
+                            </picture>
+                            <h4>US Bank</h4>
+                            <h5><em>Program Coordinator</em></h5>
+                            <p>Successfully led 15 regulatory remediation projects to on-time, on-budget completion by implementing quality controls, project management tools, and 
+                                proactive collaboration, improving efficiency by 20%, reporting turnaround by 30%, and reducing compliance risks by 75%.</p>
+                        </a>
+                    </div>
                 <div class="swiper-slide">
                     <a href="" target="_blank" class="experience-box">
                         <picture>
-                            <source srcset="images/webp/usbank.webp" type="image/webp">
-                            <img src="images/usbank.png" alt="US Bank Logo">
+                            <source srcset="images/webp/mufg.webp" type="image/webp">
+                            <img src="images/mufg.png" alt="MUFG Logo">
                         </picture>
-                        <h4>US Bank</h4>
+                        <h4>MUFG</h4>
                         <h5><em>Program Coordinator</em></h5>
                         <p>Successfully led 15 regulatory remediation projects to on-time, on-budget completion by implementing quality controls, project management tools, and 
                             proactive collaboration, improving efficiency by 20%, reporting turnaround by 30%, and reducing compliance risks by 75%.</p>
@@ -150,7 +162,27 @@
     <div class="divider"></div>
     <section id="leave-message-section">
         <h2>Leave a Message!</h2>
-        <p>coming soon :)</p>
+
+        <form class="margin-top flex flex-col space w-full">
+            <label class="space">
+                <span class="field-label">Full Name</span>
+                <input type="text" name="name" required="" class="field-input w-full" placeholder="ex., John Doe" value="">
+            </label>
+            <label class="space">
+                <span class="field-label">Email address</span>
+                <input type="email" name="email" required="" class="field-input w-full" placeholder="ex., johndoe@gmail.com" value="">
+            </label>
+            <label class="space">
+                <span class="field-label">Your message</span>
+                <textarea name="message" required="" class="field-input w-full h-20 md:h-32 resize-none" placeholder="Share your thoughts or inquiries...">
+            
+                </textarea>
+            </label>
+            <button class="field-btn" type="submit">Send Message
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+
     </section>
 
     <!-- Swiper JS -->
