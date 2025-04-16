@@ -39,36 +39,11 @@
     <div class="divider"></div>
 
     <section id="leave-message-section">
-        <h2>Leave a Message!</h2>
-
-        <form method="POST" name="contactForm" action="contactHandler.php" class="margin-top flex flex-col space w-full">
-            <label class="space">estFolder
-                <span class="field-label">Full Name</span>
-                <input type="text" name="name" required="" class="field-input w-full" placeholder="ex., John Doe" value="">
-            </label>
-            <label class="space">
-                <span class="field-label">Email address</span>
-                <input type="email" name="email" required="" class="field-input w-full" placeholder="ex., johndoe@gmail.com" value="">
-            </label>
-            <label class="space">
-                <span class="field-label">Your message</span>
-                <textarea name="message" required="" class="field-input w-full h-20 md:h-32 resize-none" placeholder="Share your thoughts or inquiries..."></textarea>
-            </label>
-            <button class="field-btn" type="submit">Send Message
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
-        </form>
+        <h2>Thank you!</h2>
+        <p>Your message has been sent successfully. I will get back to you as soon as possible.</p>
     </section>
 
-    <script language="JavaScript">
-        // Code for validating the form
-        // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-        // for details
-        var frmvalidator  = new Validator("contactform");
-        frmvalidator.addValidation("name","req","Please provide your name"); 
-        frmvalidator.addValidation("email","req","Please provide your email"); 
-        frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-    </script>
+    
 
     <div class="divider"></div>
 
