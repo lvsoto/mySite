@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<!-- body -->
+    <body>
+        <!-- Header -->
+        <header>
+            <nav>
+                <div class="left">
+                    <a href="#about-section">Leslie Vicente</a>
+                </div>
+                <div class="right">
+                    <a href="index.html#about-section">About</a>
+                    <a href="index.html#experience-section">Experience</a>
+                    <a href="index.html#projects-section">Projects</a>
+                    <a href="index.html#skills-section">Skills</a>
+                    <a href="blog.html#blog-section">Blog</a>
+                    <a href="index.html#leave-message-section">Leave a Message!</a>
+                </div>
+            </nav>
+        </header>
+        <!-- main section -->
+        <div class="divider"></div>
+        <section id="leave-message-section">
+            <h2>Leave a Message!</h2>
+    
+            <form class="margin-top flex flex-col space w-full">
+                <label class="space">
+                    <span class="field-label">Full Name</span>
+                    <input type="text" name="name" required="" class="field-input w-full" placeholder="ex., John Doe" value="">
+                </label>
+                <label class="space">
+                    <span class="field-label">Email address</span>
+                    <input type="email" name="email" required="" class="field-input w-full" placeholder="ex., johndoe@gmail.com" value="">
+                </label>
+                <label class="space">
+                    <span class="field-label">Your message</span>
+                    <textarea name="message" required="" class="field-input w-full h-20 md:h-32 resize-none" placeholder="Share your thoughts or inquiries...">
+                
+                    </textarea>
+                </label>
+                <button class="field-btn" type="submit">Send Message
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        <!-- footer -->
+        <footer>
+            <p>&copy; <span id="year"></span> Copyright thing. All Rights Reserved.</p>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Automatically update the copyright year
+                document.getElementById('year').textContent = new Date().getFullYear();
+        
+                // Initialize Swiper
+                const swiper = new Swiper(".card-swiper", {
+                    centeredSlides: false,
+                    spaceBetween: 0,
+                    slidesPerView: 'auto'
+                });
+            });
+        </script>
+    </body>
+</html>
