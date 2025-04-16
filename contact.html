@@ -15,65 +15,70 @@
 </head>
 
 <!-- body -->
-    <body>
-        <!-- Header -->
-        <header>
-            <nav>
-                <div class="left">
-                    <a href="#about-section">Leslie Vicente</a>
-                </div>
-                <div class="right">
-                    <a href="index.html#about-section">About</a>
-                    <a href="index.html#experience-section">Experience</a>
-                    <a href="index.html#projects-section">Projects</a>
-                    <a href="index.html#skills-section">Skills</a>
-                    <a href="blog.html#blog-section">Blog</a>
-                    <a href="index.html#leave-message-section">Leave a Message!</a>
-                </div>
-            </nav>
-        </header>
-        <!-- main section -->
-        <div class="divider"></div>
-        <section id="leave-message-section">
-            <h2>Leave a Message!</h2>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#about-section">Leslie Vicente</a>
+            </div>
+            <div class="right">
+                <a href="index.html#about-section">About</a>
+                <a href="index.html#experience-section">Experience</a>
+                <a href="index.html#projects-section">Projects</a>
+                <a href="index.html#skills-section">Skills</a>
+                <a href="blog.html#blog-section">Blog</a>
+                <a href="index.html#leave-message-section">Leave a Message!</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="divider"></div>
+
+    <section id="leave-message-section">
+        <h2>Leave a Message!</h2>
+
+        <form class="margin-top flex flex-col space w-full">
+            <label class="space">
+                <span class="field-label">Full Name</span>
+                <input type="text" name="name" required="" class="field-input w-full" placeholder="ex., John Doe" value="">
+            </label>
+            <label class="space">
+                <span class="field-label">Email address</span>
+                <input type="email" name="email" required="" class="field-input w-full" placeholder="ex., johndoe@gmail.com" value="">
+            </label>
+            <label class="space">
+                <span class="field-label">Your message</span>
+                <textarea name="message" required="" class="field-input w-full h-20 md:h-32 resize-none" placeholder="Share your thoughts or inquiries...">
+            
+                </textarea>
+            </label>
+            <button class="field-btn" type="submit">Send Message
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Swiper JS -->
+    <footer>
+        <p>&copy; <span id="year"></span> Copyright thing. All Rights Reserved.</p>
+    </footer>
     
-            <form class="margin-top flex flex-col space w-full">
-                <label class="space">
-                    <span class="field-label">Full Name</span>
-                    <input type="text" name="name" required="" class="field-input w-full" placeholder="ex., John Doe" value="">
-                </label>
-                <label class="space">
-                    <span class="field-label">Email address</span>
-                    <input type="email" name="email" required="" class="field-input w-full" placeholder="ex., johndoe@gmail.com" value="">
-                </label>
-                <label class="space">
-                    <span class="field-label">Your message</span>
-                    <textarea name="message" required="" class="field-input w-full h-20 md:h-32 resize-none" placeholder="Share your thoughts or inquiries...">
-                
-                    </textarea>
-                </label>
-                <button class="field-btn" type="submit">Send Message
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </form>
-        <!-- footer -->
-        <footer>
-            <p>&copy; <span id="year"></span> Copyright thing. All Rights Reserved.</p>
-        </footer>
-        
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                // Automatically update the copyright year
-                document.getElementById('year').textContent = new Date().getFullYear();
-        
-                // Initialize Swiper
-                const swiper = new Swiper(".card-swiper", {
-                    centeredSlides: false,
-                    spaceBetween: 0,
-                    slidesPerView: 'auto'
-                });
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Automatically update the copyright year
+            document.getElementById('year').textContent = new Date().getFullYear();
+    
+            // Initialize Swiper
+            const swiper = new Swiper(".card-swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto'
             });
-        </script>
-    </body>
+        });
+    </script>
+</body>
 </html>

@@ -21,52 +21,56 @@
 <script src="https://www.bloghandy.com/api/bh_blogengine.js"></script>
 
 <!-- body -->
-    <body>
-        <!-- Header -->
-        <header>
-            <nav>
-                <div class="left">
-                    <a href="#about-section">Leslie Vicente</a>
-                </div>
-                <div class="right">
-                    <a href="index.html#about-section">About</a>
-                    <a href="index.html#experience-section">Experience</a>
-                    <a href="index.html#projects-section">Projects</a>
-                    <a href="index.html#skills-section">Skills</a>
-                    <a href="blog.html#blog-section">Blog</a>
-                    <a href="contact.html#leave-message-section">Leave a Message!</a>
-                </div>
-            </nav>
-        </header>
-        <!-- main section -->
-        <main>
-            <section class="blog-posts">
-                <h2>Latest Blog Posts</h2>
-                <div class="card-swiper swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Blog posts will be dynamically inserted here -->
-                        <div id="bh-posts"></div>
-                    </div>
-                </div>
-            </section>
-        <!-- footer -->
-        <footer>
-            <p>&copy; <span id="year"></span> Copyright thing. All Rights Reserved.</p>
-        </footer>
-        
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                // Automatically update the copyright year
-                document.getElementById('year').textContent = new Date().getFullYear();
-        
-                // Initialize Swiper
-                const swiper = new Swiper(".card-swiper", {
-                    centeredSlides: false,
-                    spaceBetween: 0,
-                    slidesPerView: 'auto'
-                });
-            });
-        </script>
-    </body>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#about-section">Leslie Vicente</a>
+            </div>
+            <div class="right">
+                <a href="index.html#about-section">About</a>
+                <a href="index.html#experience-section">Experience</a>
+                <a href="index.html#projects-section">Projects</a>
+                <a href="index.html#skills-section">Skills</a>
+                <a href="blog.html#blog-section">Blog</a>
+                <a href="contact.html#leave-message-section">Leave a Message!</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="divider"></div>
+
+    <section id="blog-section" class="blog-posts">
+        <h2>Latest Blog Posts</h2>
+        <div class="card-swiper swiper">
+            <div class="swiper-wrapper">
+                <!-- Blog posts will be dynamically inserted here -->
+                <div id="bh-posts"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+    
+<!-- Swiper JS -->
+<footer>
+    <p>&copy; <span id="year"></span> Copyright thing. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Automatically update the copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Initialize Swiper
+        const swiper = new Swiper(".card-swiper", {
+            centeredSlides: false,
+            spaceBetween: 0,
+            slidesPerView: 'auto'
+        });
+    });
+</script>
+</body>
 </html>
