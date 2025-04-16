@@ -227,6 +227,11 @@ section h2::after {
     font-weight: 300;
 }
 
+#experience-section .logoimg {
+    max-width: 100%;
+}
+
+
 /* Projects Section */
 #projects-section {
     width: 100%;
